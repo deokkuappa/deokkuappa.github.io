@@ -1,0 +1,183 @@
+/*폰트 연결*/
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css);
+
+/*CSS 변수 연결*/
+:root {
+    --color00: #000000;
+    --color33: #333333;
+    --color66: #666666;
+    --color99: #999999;
+    --colordd: #dddddd;
+    --colorf2: #f2f2f2;
+    --colorff: #ffffff;
+    --color29: #ff2929;
+    --gap20: 20px;
+    --gap50: 50px;
+    --gap100: 100px;
+}
+
+/*리셋*/
+* {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+
+li {
+    list-style: none;
+}
+
+.fp-watermark {
+    display: none;
+}
+
+/*폰트*/
+body {
+    font-family: pretendard, sans-serif;
+}
+
+h1 {
+    font-size: 80px;
+    font-weight: 100;
+    color: var(--color33);
+}
+
+h2 {
+    font-size: 51px;
+    font-weight: 100;
+    color: var(--color33);
+}
+
+h3 {
+    font-size: 22px;
+    color: var(--color33);
+}
+
+h4 {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color66);
+}
+
+h6 {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--color66);
+}
+
+p {
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--color99);
+}
+
+/*공통*/
+body::before {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-image: url('Personal Site/bg01.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.1;
+}
+
+.section {
+    max-width: 1400px;
+    width: 90%;
+    margin: 0 auto;
+    background-color: transparent !important;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.btn {
+    width: 150px;
+    padding: 10px 20px;
+    background-color: var(--color33);
+    color: var(--colorff);
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn2 {
+    background-color: var(--color66);
+}
+
+.icon img {
+    border-radius: 5px;
+}
+
+.top-btn {
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    z-index: 999;
+    font-size: 30px;
+    color: var(--color33);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.4s;
+
+    /*초기 상태*/
+    opacity: 0;
+    visibility: hidden;
+}
+
+.top-btn.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.notice {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .notice {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.95);
+        color: var(--color33);
+        z-index: 9999;
+        line-height: 30px;
+    }
+}

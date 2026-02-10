@@ -1,0 +1,324 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.s1 .text-box {
+    text-align: center;
+    overflow: hidden;
+}
+
+.s1 h1 {
+    animation: slideFromRight 1s ease-out forwards;
+}
+
+.s1 h2 {
+    animation: slideFromLeft 1s ease-out forwards;
+}
+
+@keyframes slideFromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.s1 span {
+    font-weight: 600;
+}
+
+.s2 .row1 {
+    margin-bottom: 50px;
+}
+
+.s2 .title {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.s2 .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.s2 .index {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.s2 img {
+    border-radius: 20px;
+}
+
+.s2 .btn {
+    margin-top: 50px;
+}
+
+.s2 h6 {
+    font-weight: 300;
+    color: var(--colorff);
+}
+
+.s2 .row3 {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.s3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.s3 .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
+}
+
+.s3 .item {
+    line-height: 40px;
+}
+
+.s3 .item1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.s3 .item1 .img-box {
+    border-radius: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.s3 span {
+    font-weight: 200;
+}
+
+.s3 .title,
+.text {
+    margin-bottom: 20px;
+}
+
+.s3 .text-box1 {
+    margin-bottom: 75px;
+}
+
+.s3 .icon {
+    width: 10%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.s3 .icon img {
+    border-radius: 10px;
+}
+
+.s4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.s4 .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 80px;
+}
+
+.s4 .left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.s4 .title {
+    margin-bottom: 40px;
+}
+
+.s4 span {
+    font-weight: 200;
+}
+
+.s4 .text {
+    line-height: 30px;
+}
+
+.s4 .icon {
+    width: 5%;
+    display: flex;
+    gap: 10px;
+}
+
+.s4 .right {
+    width: 45%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.s5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.s5 .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 80px;
+}
+
+.s5 .left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.s5 .title {
+    margin-bottom: 40px;
+}
+
+.s5 span {
+    font-weight: 200;
+}
+
+.s5 .text {
+    line-height: 30px;
+}
+
+.s5 .icon {
+    width: 5%;
+    display: flex;
+    gap: 10px;
+}
+
+.s5 .right {
+    width: 45%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.s6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.s6 .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 80px;
+}
+
+.s6 .left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.s6 .title {
+    margin-bottom: 40px;
+}
+
+.s6 span {
+    font-weight: 200;
+}
+
+.s6 .text {
+    line-height: 30px;
+}
+
+.s6 .icon {
+    width: 5%;
+    display: flex;
+    gap: 10px;
+}
+
+.s6 .right {
+    width: 45%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.s7 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.s7 .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 80px;
+}
+
+.s7 .left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.s7 .title {
+    margin-bottom: 40px;
+}
+
+.s7 span {
+    font-weight: 200;
+}
+
+.s7 .text {
+    line-height: 30px;
+}
+
+.s7 .icon {
+    width: 5%;
+    display: flex;
+    gap: 10px;
+}
+
+.s7 .right {
+    width: 45%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.s8 .text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.s8 span {
+    font-weight: 600;
+}
