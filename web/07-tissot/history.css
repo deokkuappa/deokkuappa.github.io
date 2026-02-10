@@ -1,0 +1,51 @@
+.main img {
+    filter: brightness(0.8);
+}
+
+.main .text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main h2 {
+    font-weight: 400;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    gap: 50px;
+    width: 100%;
+}
+
+.container .text-box {
+    width: 80%;
+}
+
+.container .video {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .vod {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+p {
+    color: var(--color33);
+    line-height: 30px;
+}
+
+span {
+    font-weight: 600;
+}
