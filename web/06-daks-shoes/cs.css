@@ -1,0 +1,198 @@
+.main img{
+    filter: brightness(0.7);
+}
+
+.section1 {
+    margin-top: 100px;
+}
+
+.section1 .section-title {}
+
+.section1 .container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.section1 .item {
+    border-top: 1px solid var(--color66);
+    border-left: 1px solid var(--color66);
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.section1 .item:nth-child(5) {
+    border-right: 1px solid var(--color66);
+}
+
+.section1 .item:nth-child(6) {
+    border-bottom: 1px solid var(--color66);
+}
+
+.section1 .item:nth-child(7) {
+    border-bottom: 1px solid var(--color66);
+}
+
+.section1 .item:nth-child(8) {
+    border-bottom: 1px solid var(--color66);
+}
+
+.section1 .item:nth-child(9) {
+    border-bottom: 1px solid var(--color66);
+}
+
+.section1 .item:last-child {
+    border-right: 1px solid var(--color66);
+    border-bottom: 1px solid var(--color66);
+}
+
+.section1 span {}
+
+.section1 .num {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.section1 p {}
+
+.section1 .pop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    width: 100%;
+    height: 100%;
+}
+
+.section1 .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.section1 .cont-group {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 800px;
+}
+
+.section1 .cont {
+    background-color: var(--colorff);
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+.section1 .cont table {
+    border-top: 1px solid var(--color33);
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 12px;
+    line-height: 20px;
+    color: var(--color33);
+}
+
+.section1 .cont thead th {
+    background-color: var(--colorf2);
+    border-right: 1px solid var(--colordd);
+    border-bottom: 1px solid var(--colordd);
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+.section1 .cont thead th:last-child {
+    border-right: none
+}
+
+.section1 .cont tbody th {
+    border-right: 1px solid var(--colordd);
+    border-bottom: 1px solid var(--colordd);
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.section1 .cont tbody td {
+    border-right: 1px solid var(--colordd);
+    border-bottom: 1px solid var(--colordd);
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.section1 .cont tbody td:last-child {
+    border-right: none
+}
+
+.section1 .x-btn {
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.section1 .x-btn .bar {
+    background-color: var(--color33);
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    top: calc(50% - 0.5px);
+    right: 0;
+}
+
+.section1 .x-btn .bar1 {
+    transform: rotate(45deg);
+}
+
+.section1 .x-btn .bar2 {
+    transform: rotate(135deg);
+}
+
+/*초기값*/
+.section1 .pop {
+    display: none;
+}
+
+.section1 .pop .cont {
+    display: none;
+}
+
+.section2 {
+    margin-top: var(--gap100);
+    margin-bottom: 100px;
+}
+
+.section2 .container {}
+
+.section2 .item {
+    border-bottom: 1px solid var(--color66)
+}
+
+.section2 .ques {
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.section2 .ques i {
+    position: absolute;
+    right: 10px;
+}
+
+.section2 .item.active .ques i {
+    transform: rotate(180deg);
+}
+
+.section2 .answ {
+    background-color: #f2f2f2;
+    padding: 40px;
+    display: none;
+}

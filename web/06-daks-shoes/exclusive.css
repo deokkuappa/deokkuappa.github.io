@@ -1,0 +1,56 @@
+.main img {
+    filter: brightness(0.7);
+}
+
+section {
+    padding-top: var(--gap100);
+    padding-bottom: var(--gap100);
+}
+
+section .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap20);
+}
+
+section .container img {
+    border-radius: 20px;
+}
+
+section .text-box {
+    text-align: center;
+    margin-top: var(--gap20);
+}
+
+section .text-box .group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section .text-box .group span {
+    transition: 0.5s;
+}
+
+section .text-box .group .text1 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    transition: 0.5s;
+    opacity: 0;
+}
+
+section .text-box .group .text2 {
+    left: 0;
+    opacity: 1;
+}
+
+section .item:hover .text1 {
+    left: 50%;
+    opacity: 1;
+}
+
+section .item:hover .text2 {
+    left: 20px;
+    opacity: 0;
+}

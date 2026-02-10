@@ -1,0 +1,310 @@
+/*폰트 연결*/
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css);
+@import url('https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css');
+
+/*CSS 변수 연결*/
+:root {
+    --color00: #000000;
+    --color33: #333333;
+    --color66: #666666;
+    --color99: #999999;
+    --colordd: #dddddd;
+    --colorf2: #f2f2f2;
+    --colorff: #ffffff;
+    --point: #f5afaf;
+    --aa: 1px solid red;
+    --bb: 1px solid black;
+    --pp: 200px;
+    --gap20: 20px;
+    --gap50: 50px;
+    --gap100: 100px;
+}
+
+/*리셋*/
+* {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+
+li {
+    list-style: none;
+}
+
+/*폰트*/
+body {
+    font-family: 'SUIT Variable', sans-serif;
+}
+
+h1 {
+    font-size: 80px;
+    font-weight: 100;
+    color: var(--colorff);
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 100;
+    color: var(--color66);
+}
+
+h3 {
+    font-size: 22px;
+}
+
+h4 {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color66);
+}
+
+h6 {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--color66);
+}
+
+p {
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--color99);
+}
+
+/*공통 스타일: 헤더, 버튼, 인풋 박스, 푸터*/
+.section-title {
+    max-width: 1300px;
+    width: 90%;
+    margin: 0 auto 20px;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 90%;
+    margin: 0 auto;
+}
+
+.btn {
+    border: none;
+    background-color: var(--colorff);
+    color: var(--color33);
+    padding: 10px 30px;
+    text-transform: capitalize;
+    font-family: 'SUIT Variable', sans-serif;
+    font-weight: 600;
+}
+
+/*푸터*/
+footer {
+    background-color: var(--color00);
+    color: rgba(255, 255, 255, 0.6);
+    padding: 50px 0;
+    font-size: 14px;
+}
+
+footer .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+footer .logo img {
+    width: 100px;
+}
+
+footer .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .row1 {
+    margin-bottom: 50px;
+}
+
+footer .row1 .left {
+    display: flex;
+    gap: 80px;
+}
+
+footer .row1 .fam {
+    border: 1px solid var(--colordd);
+    border-radius: 20px;
+    padding: 5px 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+footer ul {
+    display: flex;
+    gap: 30px;
+}
+
+footer .row2 {
+    border-top: 1px solid var(--color66);
+    border-bottom: 1px solid var(--color66);
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+footer .sns i {
+    padding: 10px;
+    color: var(--colorff);
+}
+
+footer .row3 {
+    font-size: 13px;
+}
+
+/*헤더*/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--colorff);
+    transition: 0.7s;
+}
+
+header .logo {
+    left: 100px;
+    width: 60px;
+}
+
+header .logo .color {
+    display: none;
+}
+
+header .menu {
+    max-width: 1300px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+}
+
+header .menu-li {
+    width: 130px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .sub {
+    position: fixed;
+    top: 80px;
+    width: 120px;
+    background-color: var(--colorff);
+    text-align: center;
+    display: none;
+}
+
+header .sub1 {
+    height: 350px;
+}
+
+header .sub2 {
+    height: 300px;
+}
+
+header .sub3 {
+    height: 250px;
+}
+
+header .sub-ul {
+    font-size: 14px;
+    line-height: 40px;
+}
+
+header .sub-li:hover {
+    color: #93452E;
+}
+
+header .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    right: 100px;
+}
+
+header.white {
+    background-color: var(--colorff);
+    color: var(--color33);
+}
+
+header.white .logo .white {
+    display: none;
+}
+
+header.white .logo .color {
+    display: block;
+}
+
+/*탑버튼*/
+.top-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #93452E;
+    position: fixed;
+    right: 30px;
+    bottom: -150px;
+    z-index: 100;
+    transition: 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--colorff);
+}
+
+.top-btn.see {
+    bottom: 30px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*공지*/
+.notice {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .notice {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.95);
+        color: var(--color33);
+        z-index: 9999;
+        line-height: 30px;
+    }
+}
