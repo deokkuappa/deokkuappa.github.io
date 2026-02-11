@@ -46,3 +46,33 @@ function hc() {
         $('header').css({ backgroundColor: 'transparent' })
     }
 }
+
+function startGuide(el) {
+    const video = document.getElementById('guideVideo')
+    video.play()
+}
+window.addEventListener('load', function () {
+    const video = document.getElementById('guideVideo')
+    const textBox = document.querySelector('.right .txt-box')
+    const clickArea = document.querySelector('.video-click-area')
+
+    clickArea.onclick = function () {
+        if (video.paused) {
+            video.play()
+        } else {
+            video.pause()
+        }
+    }
+
+    video.onplay = function () {
+        textBox.classList.add('hide')
+        video.controls = true
+    }
+    video.onpause = function () {
+        textBox.classList.remove('hide')
+    }
+    video.onended = function () {
+        textBox.classList.remove('hide')
+        video.controls = false
+    }
+})
