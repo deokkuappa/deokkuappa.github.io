@@ -197,7 +197,7 @@ footer .logo {
     line-height: 30px;
 }
 
-footer .cs-text{
+footer .cs-text {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
@@ -207,6 +207,7 @@ footer .cs-text{
 footer .cs-text h6 {
     color: var(--colorff);
 }
+
 footer .cs-text p {
     color: var(--color99);
 }
@@ -290,6 +291,7 @@ footer .cs-text p {
         z-index: 9999;
         line-height: 30px;
     }
+
     .notice h4 {
         color: var(--color33);
     }
