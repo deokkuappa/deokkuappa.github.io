@@ -209,4 +209,8 @@ button {
     #fp-nav {
         display: none;
     }
+
+#topBtn {
+display: none;
+}
 }
