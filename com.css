@@ -87,10 +87,10 @@ p {
 /*공통*/
 body::before {
     position: fixed;
-    top: -5vh;
+    top: 0;
     left: 0;
     width: 100%;
-    height: 110vh;
+    height: 100vh;
     content: '';
     background-image: url('image/bg01.png');
     background-attachment: scroll;
