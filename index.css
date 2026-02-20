@@ -405,6 +405,8 @@ html {
     .s4 .left {
         order: 2 !important;
         width: 100%;
+will-change: transform;
+        transform: translateZ(0);
     }
 
     .s4 .left .title {
@@ -428,6 +430,9 @@ html {
         order: 1 !important;
         width: 100%;
         height: 12vh !important;
+overflow: hidden;
+will-change: transform;
+        transform: translateZ(0);
     }
 
     .s4 .right img {
