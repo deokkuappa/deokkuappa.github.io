@@ -50,36 +50,36 @@ body {
 }
 
 h1 {
-    font-size: 80px;
+    font-size: 5rem;
     font-weight: 100;
     color: var(--color33);
 }
 
 h2 {
-    font-size: 51px;
+    font-size: 3.1875rem;
     font-weight: 100;
     color: var(--color33);
 }
 
 h3 {
-    font-size: 22px;
+    font-size: 1.375rem;
     color: var(--color33);
 }
 
 h4 {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     color: var(--color66);
 }
 
 h6 {
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 700;
     color: var(--color66);
 }
 
 p {
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 22px;
     color: var(--color99);
 }
@@ -93,7 +93,7 @@ body::before {
     height: 100%;
     content: '';
     background-image: url('image/bg01.png');
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -105,6 +105,11 @@ body::before {
     width: 90%;
     margin: 0 auto;
     background-color: transparent !important;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
 }
 
 button {
@@ -163,21 +168,45 @@ button {
     display: none;
 }
 
-@media (max-width: 800px) {
-    .notice {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        gap: 20px;
+@media (max-width: 767px) {
+    html,
+    body {
+        width: 100%;
+        overflow-x: hidden;
+        font-size: 16px;
+    }
+
+    body::before {
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(255, 255, 255, 0.95);
-        color: var(--color33);
-        z-index: 9999;
-        line-height: 30px;
+        content: '';
+        background-image: url('image/bg02.png');
+        background-attachment: scroll;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: 0.1;
+        will-change: transform;
+    }
+
+    .section {
+        width: 100%;
+        padding: 50px 0;
+    }
+
+    .container {
+        max-width: none;
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #fp-nav {
+        display: none;
     }
 }

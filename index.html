@@ -24,39 +24,51 @@
         </div>
         <div class="section s2" data-anchor="s2">
             <div class="row row1">
-                <div class="title">INDEX</div>
+                <div class="title">
+                    <h2>INDEX</h2>
+                </div>
             </div>
             <div class="row row2">
                 <div class="container">
                     <div class="index">
                         <img src="image/deokkuappa02.png" alt="">
-                        <div class="btn">
-                            <h6><a href="#s3">프로필</a></h6>
-                        </div>
+                        <a href="#s3">
+                            <div class="btn">
+                                <h6>프로필</h6>
+                            </div>
+                        </a>
                     </div>
                     <div class="index">
                         <img src="image/tissot02.png" alt="">
-                        <div class="btn">
-                            <h6><a href="#s4">프로젝트 A</a></h6>
-                        </div>
+                        <a href="#s4">
+                            <div class="btn">
+                                <h6>프로젝트 A</h6>
+                            </div>
+                        </a>
                     </div>
                     <div class="index">
                         <img src="image/daks02.png" alt="">
-                        <div class="btn">
-                            <h6><a href="#s5">프로젝트 B</a></h6>
-                        </div>
+                        <a href="#s5">
+                            <div class="btn">
+                                <h6>프로젝트 B</h6>
+                            </div>
+                        </a>
                     </div>
                     <div class="index">
                         <img src="image/dkshop02.png" alt="">
-                        <div class="btn">
-                            <h6><a href="#s6">프로젝트 C</a></h6>
-                        </div>
+                        <a href="#s6">
+                            <div class="btn">
+                                <h6>프로젝트 C</h6>
+                            </div>
+                        </a>
                     </div>
                     <div class="index">
-                        <img src="image/cardnews.png" alt="">
-                        <div class="btn btn5">
-                            <h6><a href="#s7">그래픽</a></h6>
-                        </div>
+                        <img src="image/cardnews02.png" alt="">
+                        <a href="#s7">
+                            <div class="btn btn5">
+                                <h6>그래픽</h6>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -322,7 +334,7 @@
                     </button>
                 </div>
                 <div class="right">
-                    <img src="image/cardnews.jpg" alt="">
+                    <img src="image/cardnews01.png" alt="">
                 </div>
             </div>
         </div>
@@ -359,15 +371,23 @@
     $('#fullpage').fullpage({
         scrollOverflow: false,
         navigation: true,
-        scrollingSpeed: 1000,
+        scrollingSpeed: 800,
         onLeave: function (a, b, c) {
             if (b.index >= 2 && b.index !== 7) {
                 $('#topBtn').addClass('show')
             } else {
                 $('#topBtn').removeClass('show')
             }
-        }
+        },
+        touchSensitivity: 15,
+        responsiveWidth: 768,
     })
+    if (window.innerWidth <= 767) {
+        document.querySelector('.top-btn').onclick = function (e) {
+            e.stopImmediatePropagation()
+            window.scrollTo({ top: 0, behavior: 'smooth' })
+        }
+    }
 </script>
 
 </html>

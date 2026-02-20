@@ -47,7 +47,7 @@ html {
     margin-bottom: 50px;
 }
 
-.s2 .title {
+.s2 h2 {
     font-size: 40px;
     font-weight: 600;
 }
@@ -77,14 +77,6 @@ html {
 .s2 h6 {
     font-weight: 300;
     color: var(--colorff);
-}
-
-.s2 .row3 {
-    margin-top: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
 }
 
 .s3 {
@@ -145,12 +137,6 @@ html {
     justify-content: center;
 }
 
-.s4 .container {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 80px;
-}
-
 .s4 .left {
     width: 50%;
     display: flex;
@@ -186,12 +172,6 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.s5 .container {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 80px;
 }
 
 .s5 .left {
@@ -231,12 +211,6 @@ html {
     justify-content: center;
 }
 
-.s6 .container {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 80px;
-}
-
 .s6 .left {
     width: 50%;
     display: flex;
@@ -272,12 +246,6 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.s7 .container {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 80px;
 }
 
 .s7 .left {
@@ -321,4 +289,298 @@ html {
 
 .s8 span {
     font-weight: 600;
+}
+
+@media (max-width: 767px) {
+    .section {
+        height: auto !important;
+        padding-top: 20px !important;
+        padding-bottom: 20px !important;
+    }
+
+    .s1 .text-box {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .s1 h2 {
+        font-size: clamp(1.1rem, 4.5vw, 1.5rem);
+        font-weight: 300;
+    }
+
+    .s1 h1 {
+        font-size: clamp(1.8rem, 9vw, 2.8rem);
+        font-weight: 300;
+    }
+
+    .s2 {
+        display: none !important;
+    }
+
+    .s3,
+    .s4,
+    .s5,
+    .s6,
+    .s7 {
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .s3 .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 80%;
+        height: 100%;
+        margin: 0 auto;
+        gap: 1rem;
+    }
+
+    .s3 .item {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        line-height: 1.5rem;
+        text-wrap: balance;
+    }
+
+    .s3 .item1 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .s3 .item1 .img-box {
+        width: calc(80px + 5vw);
+        height: calc(80px + 5vw);
+        border-radius: 50%;
+    }
+
+    .s3 .item1 img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .s3 .item1 .text-box h3 {
+        font-size: calc(10px + 0.8vw);
+        line-height: 1.5rem;
+    }
+
+    .s3 .item1 .text-box span {
+        display: block;
+    }
+
+    .s3 .item2 .text-box1 {
+        margin-bottom: 1.5rem;
+    }
+
+    .s3 .icon {
+        gap: calc(5px + 0.5vw);
+    }
+
+    .s3 .icon img {
+        width: calc(20px + 1vw);
+        border-radius: calc(1px + 1vw);
+    }
+
+    .s4,
+    .s5,
+    .s6,
+    .s7 {
+        margin-bottom: 1rem;
+    }
+
+    .s4 .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 80%;
+        height: 100%;
+        margin: 0 auto;
+        gap: 1rem;
+    }
+
+    .s4 .left {
+        order: 2 !important;
+        width: 100%;
+    }
+
+    .s4 .left .title {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .s4 .text {
+        line-height: 1.5rem;
+    }
+
+    .s4 .left img {
+        width: calc(20px + 1vw);
+    }
+
+    .s4 .left button {
+        margin-top: 0.5rem;
+    }
+
+    .s4 .right {
+        order: 1 !important;
+        width: 100%;
+        height: 12vh !important;
+    }
+
+    .s4 .right img {
+        width: 100%;
+        height: 100%;
+        object-position: center !important;
+    }
+
+    .s5 .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 80%;
+        height: 100%;
+        margin: 0 auto;
+        gap: 1rem;
+    }
+
+    .s5 .left {
+        order: 2 !important;
+        width: 100%;
+    }
+
+    .s5 .left .title {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .s5 .text {
+        line-height: 1.5rem;
+    }
+
+    .s5 .left img {
+        width: calc(20px + 1vw);
+    }
+
+    .s5 .left button {
+        margin-top: 0.5rem;
+    }
+
+    .s5 .right {
+        order: 1 !important;
+        width: 100%;
+        height: 12vh !important;
+    }
+
+    .s5 .right img {
+        width: 100%;
+        height: 100%;
+        object-position: center !important;
+    }
+
+    .s6 .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 80%;
+        height: 100%;
+        margin: 0 auto;
+        gap: 1rem;
+    }
+
+    .s6 .left {
+        order: 2 !important;
+        width: 100%;
+    }
+
+    .s6 .left .title {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .s6 .text {
+        line-height: 1.5rem;
+    }
+
+    .s6 .left img {
+        width: calc(20px + 1vw);
+    }
+
+    .s6 .left button {
+        margin-top: 0.5rem;
+    }
+
+    .s6 .right {
+        order: 1 !important;
+        width: 100%;
+        height: 12vh !important;
+    }
+
+    .s6 .right img {
+        width: 100%;
+        height: 100%;
+        object-position: center !important;
+    }
+
+    .s7 .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 80%;
+        height: 100%;
+        margin: 0 auto;
+        gap: 1rem;
+    }
+
+    .s7 .left {
+        order: 2 !important;
+        width: 100%;
+    }
+
+    .s7 .left .title {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .s7 .text {
+        line-height: 1.5rem;
+    }
+
+    .s7 .left img {
+        width: calc(20px + 1vw);
+    }
+
+    .s7 .left button {
+        margin-top: 0.5rem;
+    }
+
+    .s7 .right {
+        order: 1 !important;
+        width: 100%;
+        height: 12vh !important;
+    }
+
+    .s7 .right img {
+        width: 100%;
+        height: 100%;
+        object-position: center !important;
+    }
+
+    .s8 .text-box {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .s8 h2 {
+        font-size: clamp(1.1rem, 4.5vw, 1.5rem);
+        font-weight: 300;
+    }
+
+    .s8 h1 {
+        font-size: clamp(1.8rem, 9vw, 2.8rem);
+        font-weight: 300;
+    }
 }
