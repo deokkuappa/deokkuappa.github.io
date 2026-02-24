@@ -156,6 +156,7 @@ button {
     bottom: 40px;
     z-index: 999;
     font-size: clamp(24px, 2.5vw, 100px);
+    text-shadow: 1px;
     color: var(--color33);
     border-radius: 50%;
     display: flex;
