@@ -762,10 +762,6 @@ html {
         width: calc(20px + 1vw);
     }
 
-    .s4 .left button {
-        margin-top: 0.5rem;
-    }
-
     .s4 .right {
         order: 1 !important;
         width: 100%;
@@ -804,10 +800,6 @@ html {
 
     .s5 .left img {
         width: calc(20px + 1vw);
-    }
-
-    .s5 .left button {
-        margin-top: 0.5rem;
     }
 
     .s5 .right {
@@ -850,10 +842,6 @@ html {
         width: calc(20px + 1vw);
     }
 
-    .s6 .left button {
-        margin-top: 0.5rem;
-    }
-
     .s6 .right {
         order: 1 !important;
         width: 100%;
@@ -892,10 +880,6 @@ html {
 
     .s7 .left img {
         width: calc(20px + 1vw);
-    }
-
-    .s7 .left button {
-        margin-top: 0.5rem;
     }
 
     .s7 .right {
